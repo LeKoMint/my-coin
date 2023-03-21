@@ -1,0 +1,174 @@
+@media (max-width: 1350px) {
+    .container {
+        margin: 0 50px 60px 50px;
+    }
+
+    .item__photo-coin-bg--catalog {
+        max-width: 160px;
+        max-height: 160px;
+        margin-top: 20%;
+    }
+
+    .prew-img--catalog img {
+        width: 130px !important;
+        height: 130px !important;
+    }
+
+    .catalog-collection__item__title {
+        font-size: 20px;
+    }
+
+    .catalog-collection__item {
+        justify-content: center;
+        padding-bottom: 45px;
+    }
+
+    .container--our-mission {
+        margin: 0 50px;
+    }
+
+    .footer__container {
+        margin: 0 8% 30px 8%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .header-nav__menu__list {
+        font-size: 14px;
+    }
+
+    .social-nav__social__country p {
+        font-size: 11px;
+    }
+    /* slider */
+    .header-slider__title {
+        font-size: 30px;
+    }
+
+    .item__photo-coin-bg {
+        width: 170px;
+        height: 170px;
+    }
+
+    .prew-img img {
+        width: 140px !important;
+        height: 140px !important;
+    }
+
+    .carusel-item__descr-name {
+        font-size: 14px;
+    }
+
+    .carusel-item__descr {
+        margin-bottom: 12px;
+        font-size: 14px;
+    }
+
+    .header-slider__carusel__prew {
+        top: 33%;
+        width: 30px;
+        height: 60px;
+    }
+
+    .header-slider__carusel__next {
+        top: 33%;
+        width: 30px;
+        height: 60px;
+    }
+
+    .slider-dot {
+        width: 18px;
+        height: 18px;
+    }
+
+    .carusel-item__link p {
+        font-size: 14px;
+    }
+
+    /* Catalog */
+    .catalog-title {
+        font-size: 30px;
+    }
+
+    .select-filter {
+        width: 220px;
+        max-height: 35px;
+        padding: 8px 16px;
+    }
+
+    .menu-filter__title {
+        font-size: 17px;
+    }
+
+    .menu-filter__icon {
+        width: 16px;
+        height: 15px;
+    }
+
+    .catalog-collection__item {
+        height: 270px;
+        padding-bottom: 40px;
+    }
+
+    .catalog-collection__item__title {
+        font-size: 15px;
+    }
+
+    .item__photo-coin-bg--catalog {
+        max-width: 130px;
+        max-height: 130px;
+    }
+
+
+    .prew-img--catalog img {
+        width: 115px !important;
+        height: 115px !important;
+    }
+
+    .item__photo-banknote-bg {
+        border-radius: 5px;
+    }
+
+    .prew-img-banknote img {
+        height: 210px !important;
+        margin: 6px;
+    }
+
+    .form-subscribe {
+        row-gap: 13px;
+        flex-direction: column;
+    }
+
+    .input-placeholder {
+        font-size: 15px;
+        letter-spacing: 0.03em;
+    }
+
+    /* Footer */
+    .footer-social__left {
+        font-size: 20px;
+    }
+
+    .footer-social__right__folow {
+        padding: 10px 20px;
+        font-size: 15px;
+    }
+
+    .footer-social__icons {
+        column-gap: 16px;
+    }
+
+    .footer-copyright {
+        margin: 7px 0 45px;
+        font-size: 11px;
+    }
+
+
+
+
+
+}
+
+@media (max-width: 800px) {
+
+}
