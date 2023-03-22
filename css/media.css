@@ -145,6 +145,10 @@
     }
 
     /* Footer */
+    .footer-social {
+        padding-left: 10px;
+    }
+
     .footer-social__left {
         font-size: 20px;
     }
@@ -162,13 +166,125 @@
         margin: 7px 0 45px;
         font-size: 11px;
     }
+}
 
+@media (max-width: 800px) {
+    .container {
+        margin: 0 25px 60px 25px;
+    }
 
+    .container--our-mission {
+        margin: 0 20px;
+        padding-bottom: 30px;
+    }
 
+    .header-nav__menu {
+        padding: 10px 0 12px 0;
+    }
+
+    .header-nav__menu__list {
+        font-size: 11px;
+    }
+
+    .select-filter {
+        width: 100px;
+        max-height: 35px;
+        padding: 8px 16px;
+    }
+
+    .menu-filter__title__big {
+        display: none;
+    }
+    .menu-filter__title__small {
+        display: contents;
+    }
+
+    .catalog-collection {
+        flex-wrap: wrap;
+        row-gap: 100px;
+    }
+
+    .catalog-collection__item--item2{
+        border-right: none;
+    }
 
 
 }
 
-@media (max-width: 800px) {
+@media (max-width: 500px) {
 
+    .container {
+        margin: 0 15px 60px 15px;
+    }
+
+    .select-filter {
+        position: absolute;
+        flex-direction: row-reverse;
+        top: 5px;
+        left: 50%;
+        transform: translate(-50%);
+        background: none;
+        box-shadow: none;
+    }
+
+    .catalog-collection {
+        row-gap: 50px;
+    }
+
+    .catalog-title {
+        width: 100%;
+        border-top: solid var(--border-color);
+    }
+
+    .items-catalog-group__column3-4 {
+        row-gap: 50px;
+    }
+
+    .catalog-collection__item__title {
+        top: -16px;
+        font-size: 20px;
+    }
+
+    .item__photo-coin-bg--catalog {
+        max-width: 170px;
+        max-height: 170px;
+    }
+
+    .prew-img--catalog img {
+        width: 140px !important;
+        height: 140px !important;
+    }
+
+    .catalog-collection__item__title--banknote {
+        top: 22px;
+    }
+
+    .item__photo-banknote-bg {
+        margin: 75px 0 auto
+    }
+
+    .prew-img-banknote img {
+        height: 160px !important;
+        margin: 6px;
+    }
+
+    .items-catalog-group__column1-2 {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 100%;
+    }
+    .items-catalog-group__column3-4 {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 100%;
+    }
+
+    .catalog-collection__item--item1,
+    .catalog-collection__item--item3 {
+        border-right: none;
+    }
+
+    
 }
