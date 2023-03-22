@@ -4,11 +4,23 @@ owl.owlCarousel(
    {
         loop: true,
         margin: 15,
-        nav: true,
+        nav: false,
         dots: true,
+        responsive: {
+            0: {
+                items: 1,
+                },
 
-    } 
-);
+            501: {
+                items: 2,
+                },
+
+            801: {
+                items: 3,
+                }
+    },
+    
+});
 
 
 $('.header-slider__carusel__next').click(function() {
