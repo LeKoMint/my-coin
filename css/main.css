@@ -395,7 +395,6 @@ footer a {
     position: absolute;
     top: 42px;
     left: 0;
-
 }
 
 .menu-filter__icon {
@@ -415,7 +414,26 @@ footer a {
     color: var(--light-text-color);
 }
 
+.menu-filter__title__big {
+    display: contents;
+}
+.menu-filter__title__small {
+    display: none;
+}
+
 .catalog-collection {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.items-catalog-group__column1-2{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.items-catalog-group__column3-4{
     display: flex;
     align-items: center;
     width: 100%;
@@ -434,11 +452,24 @@ footer a {
     border-bottom: solid var(--border-color);
 }
 
-.catalog-collection__item--first_center {
+.catalog-collection__item--item1 {
     border-right: solid var(--border-color);
 }
 
-.catalog-collection__item__title {
+.catalog-collection__item--item2 {
+    border-right: solid var(--border-color);
+}
+
+.catalog-collection__item--item3 {
+    border-right: solid var(--border-color);
+}
+
+.catalog-collection__item--item4 {
+    border-right: none;
+}
+
+.catalog-collection__item__title,
+.catalog-collection__item__title--banknote {
     position: absolute;
     top: -45px;
     left: 50%;
