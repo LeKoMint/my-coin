@@ -5,13 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My coints</title>
-    <link rel<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My coints</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/media.css">
@@ -49,6 +42,7 @@
                 </div>
             </div>
             <div class="header-nav__menu">
+            <!-- Menu desktop -->
                 <ul class="header-nav__menu__list">
                     <li><a href="#!" class="active">ВСЯ КОЛЕКЦІЯ</a></li>
                     <li><a href="#!">МОНЕТИ</a></li>
@@ -57,7 +51,12 @@
                     <li><a href="#!">СУВЕНІРИ</a></li>
                     <li><a href="#!">КОНТАКТИ</a></li>
                 </ul>
-            </div>
+            <!-- Mobile menu -->
+            <ul class="header-nav__menu__mobile">
+                <li><a href="#!" class="active"><img src="./img/icons/mobile-menu.svg" alt=""></a></li>
+                <li><a href="#!">МЕНЮ</a></li>
+            </ul>
+    </div>
         </div>
  <!-- HEADER-SLIDER -->
         <div class="header-slider">
@@ -175,11 +174,11 @@
                     <p class="menu-filter__title__small">Фільтр</p>
                 </div>
                 <div class="menu-filter__icon">
-                    <img src="./img/icons/menu-filter-icon.svg" alt="Відкрити фільтр">
+                    <img src="./img/icons/slider_filter_icon.svg" alt="Відкрити фільтр">
                 </div>
                 </div>
 
-                <div class="catalog-title">
+                <div class="catalog-title catalog-title--main">
                    <h2>КАТАЛОГ<br>—</h2>
                 </div>
                 <!-- Items Catalog Group 1Full 1-4-->
@@ -282,7 +281,7 @@
         </section>
        <!-- RESENT ADDITIONS -->
         <section class="section">
-           <div class="container">
+           <div class="container container--resent-additions">
                <div class="catalog-title">
                    <h2>НЕЩОДАВНІ ПОПОВНЕННЯ<br>—</h2>
                </div>
@@ -313,7 +312,7 @@
                    </div>
                    <!-- Не Забудемо, Не Пробачимо -->
                    <div class="catalog-collection__item catalog-collection__item--item2">
-                    <div class="catalog-collection__item__title">
+                    <div class="catalog-collection__item__title catalog-collection__item__title--banknote">
                         <h3>Не Забудемо, Не Пробачимо<br>—</h3>
                     </div>
 
@@ -334,485 +333,7 @@
                         <a href="#!"><p>ДЕТАЛЬНІШЕ</p></a>
                     </div>
                    </div>
-                   </div>
-                   <div class="items-catalog-group__column3-4">
-                   <!-- UNA PESETA 1869 -->
-                   <div class="catalog-collection__item catalog-collection__item--item3">
-                    <div class="catalog-collection__item__title">
-                        <h3>UNA PESETA 1869<br>—</h3>
-                    </div>
-
-                    <div class="catalog-collection__item__photo">
-                        <div class="item__photo-coin-bg item__photo-coin-bg--catalog">
-                            <div class="prew-img prew-img--catalog"><img class="item__photo-coin-catalog"
-                            src="./img/photo/coins/silver/una-peseta-avers.png" alt="Дивитись фото">
-                            </div>
-                            <div class="prew-img prew-img--catalog"><img class="item__photo-coin-catalog"
-                            src="./img/photo/coins/silver/una-peseta-revers.png" alt="Дивитись фото">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="catalog-collection__item__link">
-                        <a href="#!"><p>ДЕТАЛЬНІШЕ</p></a>
-                    </div>
-                   </div>
-                   <!-- “Śląnsk Nasz” 1921 -->
-                   <div class="catalog-collection__item catalog-collection__item--item4">
-                    <div class="catalog-collection__item__title">
-                        <h3>“Śląnsk Nasz” 1921<br>—</h3>
-                    </div>
-
-                    <div class="catalog-collection__item__photo">
-                        <div class="item__photo-coin-bg item__photo-coin-bg--catalog">
-                            <div class="prew-img prew-img--catalog"><img class="item__photo-coin-catalog"
-                            src="./img/photo/souvenirs/poland/śląnsk-nasz-avers.png" alt="Дивитись фото">
-                            </div>
-                            <div class="prew-img prew-img--catalog"><img class="item__photo-coin-catalog"
-                            src="./img/photo/souvenirs/poland/śląnsk-nasz-revers.png" alt="Дивитись фото">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="catalog-collection__item__link">
-                        <a href="#!"><p>ДЕТАЛЬНІШЕ</p></a>
-                    </div>
-                   </div>
-                </div>
-               </div>
-           </div>
-        </section>
-       <!-- SUBSCRIBE -->
-        <section class="section">
-            <div class="container container--subscribe">
-                <div class="catalog-title catalog-title--subscribe">
-                   <h2>БУДЬ ТИМ ХТО КУПУЄ ГРОШІ ЗА ГРОШІ<br>—</h2>
-                </div>
-
-                <form class="form-subscribe">
-                    <div class="input-wrapper">
-                        <label for="first name">First Name</label>
-                        <input class="input-placeholder" type="text" maxlength="40" placeholder=" Ваше ім'я">
-                    </div>
-
-                    <div class="input-wrapper">
-                        <label for="last name">Last Name</label>
-                        <input class="input-placeholder" type="text" maxlength="40" placeholder=" Ваше прізвище">
-                    </div>
-
-                    <div class="input-wrapper">
-                        <label for="email">E-Mail</label>
-                        <input class="input-placeholder" type="email" maxlength="40" name="" id="" placeholder=" mail@mail.com">
-                    </div>
-                </form>
-
-                <button class="form-subscribe__btn">Підписатись</button>
-            </div>
-
-        </section>
-       <!-- OUR MISSION -->
-        <section class="section">
-            <div class="container container--our-mission">
-                <div class="catalog-title catalog-title--our-mission">
-                    <h2>НАША МІСІЯ<br>—</h2>
-                </div>
-
-                <div class="our-mission__text">
-                    <p>В першу чергу сайт розроблявся для впорядкування своєї улюбленої колекції. Так значно краще розуміти що ще треба
-                        прикупити, для угамування хворобливого бажання нових грошей. Але важливіше просто не заплутатися і при
-                        необхідності без проблем перевірити наявність тієї чи іншої монети. Нехай то потрібно для продажу, обміну, або
-                        звичайного хизування.
-                    </p>
-                    <p>Якщо Вам цікаве не просто колекціонування, а й продаж монет - цей сайт буде контролювати кількість монет, які
-                        залишились і які бажано продати, бо вже дуже вигідна вартість. В майбутньому ми плануємо додати відстежування
-                        актуальних цін, ведення статистики. В сукупності всі ці моменти допоможуть Вам робити правильні і завчасні дії з
-                        Вашою колекцією.
-                    </p>
-                    <p>Отож... Основною нашою місією ми вважаємо отримання задоволення від улюбленої справи і облегшення рутинних
-                        справ.
-                    </p>
-                </div>
-            </div>
-        </section>
-    </section>
-    <!-- FOOTER -->
-    <footer class="footer">
-        <div class="footer__container">
-             <!-- Footer-menu -->
-                <div class="header-nav__menu header-nav__menu--footer-nav__menu">
-                    <ul class="header-nav__menu__list header-nav__menu__list--footer-nav__menu__list">
-                        <li><a href="#!" class="active">ВСЯ КОЛЕКЦІЯ</a></li>
-                        <li><a href="#!">МОНЕТИ</a></li>
-                        <li><a href="#!">БАНКНОТИ</a></li>
-                        <li><a href="#!">НАБОРИ</a></li>
-                        <li><a href="#!">СУВЕНІРИ</a></li>
-                        <li><a href="#!">КОНТАКТИ</a></li>
-                    </ul>
-                </div>
-             <!-- Footer-social -->
-                <div class="footer-social">
-                    <div class="footer-social__left">COINS & BANKNOTES</div>
-                    <div class="footer-social__right">
-                        <div class="footer-social__right__folow">
-                            <p>FOLOW US</p>
-                        </div>
-
-                        <ul class="footer-social__icons">
-                            <li><a href="#!"><img src="./img/icons/header/youtube_white_icon.svg" alt="Youtube channel">
-                                </a>
-                            </li>
-                            <li><a href="#!">
-                                    <img src="./img/icons/header/facebook_white_icon.svg" alt="Facebook channel">
-                                </a>
-                            </li>
-                            <li><a href="#!">
-                                    <img src="./img/icons/header/instagram_white_icon.svg" alt="Instagram channel">
-                                </a>
-                            </li>
-                        </ul>
-
-                    </div>
-                </div>
-             <!-- Footer-copyright -->
-                <div class="footer-copyright">
-                    <div class="copyright">
-                        Copyright 2023 Kaktys All Rights Reserved
-                    </div>
-                    <div class="footer-email">
-                        e-mail: smart0829967@gmail.com
-                    </div>
-                </div>
-    </footer>
-    <!-- jquery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <!-- Carusel.js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <!-- main-file.js -->
-    <script src="./JS/main.js"></script>
-</body>
-</html>="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/media.css">
-    <!-- Carusel css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Carusel theme css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-</head>
-<body>
- <!-- HEADER -->
-    <header>
-        <div class="header-nav">
-            <div class="header-nav__top">
-                <a href="#!" class="logo"></a>
-                <div class="header-nav__social">
-                    <div class="social-nav__social__country">
-                        <p>COUNTRY</p>
-                        <img src="./img/icons/header/location_white_icon.svg" alt="Ваша локація"></div>
-
-                    <ul class="social-nav__social__icons">
-                        <li><a href="#!">
-                            <img src="./img/icons/header/youtube_white_icon.svg" alt="Youtube channel">
-                            </a>
-                        </li>
-                        <li><a href="#!">
-                            <img src="./img/icons/header/facebook_white_icon.svg" alt="Facebook channel">
-                            </a>
-                        </li>
-                        <li><a href="#!">
-                            <img src="./img/icons/header/instagram_white_icon.svg" alt="Instagram channel">
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="header-nav__menu">
-                <ul class="header-nav__menu__list">
-                    <li><a href="#!" class="active">ВСЯ КОЛЕКЦІЯ</a></li>
-                    <li><a href="#!">МОНЕТИ</a></li>
-                    <li><a href="#!">БАНКНОТИ</a></li>
-                    <li><a href="#!">НАБОРИ</a></li>
-                    <li><a href="#!">СУВЕНІРИ</a></li>
-                    <li><a href="#!">КОНТАКТИ</a></li>
-                </ul>
-            </div>
-        </div>
- <!-- HEADER-SLIDER -->
-        <div class="header-slider">
-            <div class="header-slider__title"><h2>БАЖАНІ ЛОТИ<br>—</h2></div>
-            <div class="header-slider__carusel">
-                <div class="owl-carousel">
-                    <div class="header-slider__carusel-item">
-                        <div class="carusel-item__photo">
-                            <div class="item__photo-coin-bg">
-                                <div class="prew-img"><img class="item__photo-coin"
-                                src="./img/photo/coins/silver/20uah-shedryk-avers.png" alt="Дивитись фото">
-                                </div>
-
-                                <div class="prew-img"><img class="item__photo-coin"
-                                src="./img/photo/coins/silver/20uah-shedryk-revers.png" alt="Дивитись фото">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carusel-item__descr-name"><p>“Щедрик”</p></div>
-                        <ul class="carusel-item__descr">
-                            <li class="carusel-item__descr-denom">
-                                <span class="descr__name">Номінал:</span>
-                                <span class="descr__data">  20 грн</span>
-                            </li>
-
-                            <li class="carusel-item__descr-material">
-                                    <span class="descr__name">Матеріал:</span>
-                                    <span class="descr__data">  Ag 925</span>
-                            </li>
-                        </ul>
-                        <div class="carusel-item__link"><a href="#!"><p>Детальніше</p></a></div>
-                    </div>
-
-                    <div class="header-slider__carusel-item">
-                        <div class="carusel-item__photo">
-                            <div class="item__photo-coin-bg">
-                                <div class="prew-img"><img class="item__photo-coin"
-                                src="./img/photo/coins/ukraine/5-uah/30rokiv-nezalegnosti-avers.png" alt="Дивитись фото">
-                                </div>
-
-                                <div class="prew-img"><img class="item__photo-coin"
-                                src="./img/photo/coins/ukraine/5-uah/30rokiv-nezalegnosti-revers.png" alt="Дивитись фото">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carusel-item__descr-name"><p>“До 30-річчя незалежності України”</p></div>
-                        <ul class="carusel-item__descr">
-                            <li class="carusel-item__descr-denom">
-                                <span class="descr__name">Номінал:</span>
-                                <span class="descr__data">  Номінал:  5 грн</span>
-                            </li>
-
-                            <li class="carusel-item__descr-material">
-                                    <span class="descr__name">Матеріал:</span>
-                                    <span class="descr__data">  нейзільбер</span>
-                            </li>
-                        </ul>
-                        <div class="carusel-item__link"><a href="#!"><p>Детальніше</p></a></div>
-                    </div>
-
-                    <div class="header-slider__carusel-item">
-                        <div class="carusel-item__photo">
-                            <div class="item__photo-coin-bg">
-                                <div class="prew-img"><img class="item__photo-coin"
-                                src="./img/photo/coins/silver/lithuwanian_mint/Kraken-reverse.png" alt="Дивитись фото">
-                                </div>
-
-                                <div class="prew-img"><img class="item__photo-coin"
-                                src="./img/photo/coins/silver/lithuwanian_mint/Kraken-obverse.png" alt="Дивитись фото">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carusel-item__descr-name"><p>“KRAKEN”</p></div>
-                        <ul class="carusel-item__descr">
-                            <li class="carusel-item__descr-denom">
-                                <span class="descr__name">Номінал:</span>
-                                <span class="descr__data">  5 $</span>
-                            </li>
-
-                            <li class="carusel-item__descr-material">
-                                    <span class="descr__name">Матеріал:</span>
-                                    <span class="descr__data">  Ag 999</span>
-                            </li>
-                        </ul>
-                        <div class="carusel-item__link"><a href="#!"><p>Детальніше</p></a></div>
-                    </div>
-                </div>
-                <button class="header-slider__carusel__prew">
-                    <img src="./img/icons/header/button-prew.svg" alt="Попередный слайд">
-                </button>
-
-                <button class="header-slider__carusel__next">
-                    <img src="./img/icons/header/button-next.svg" alt="Наступний слайд">
-                </button>
-
-            </div>
-
-            <div class="header-slider__nav">
-                <div class="slider-dot dot--active"></div>
-                <div class="slider-dot"></div>
-                <div class="slider-dot"></div>
-                <div class="slider-dot"></div>
-            </div>
-        </div>
-    </header>
-
-    <!-- CATALOG -->
-    <section class="wrapper">
-        <section class="section">
-            <div class="container">
-               <!-- Menu filter -->
-                <div class="select-filter select-filter--menu-filter">
-                <div class="menu-filter__title">
-                    <p class="menu-filter__title__big">ФІЛЬТРУВАТИ КАТАЛОГ</p>
-                    <p class="menu-filter__title__small">Фільтр</p>
-                </div>
-                <div class="menu-filter__icon">
-                    <img src="./img/icons/menu-filter-icon.svg" alt="Відкрити фільтр">
-                </div>
-                </div>
-
-                <div class="catalog-title">
-                   <h2>КАТАЛОГ<br>—</h2>
-                </div>
-                <!-- Items Catalog Group 1Full 1-4-->
-                <div class="catalog-collection">
-                  <!-- Items Catalog Group 1-2 -->
-                   <div class="items-catalog-group__column1-2">
-                        <!-- Coins -->
-                        <div class="catalog-collection__item catalog-collection__item--item1">
-                         <div class="catalog-collection__item__title">
-                             <h3>МОНЕТИ<br>—</h3>
-                         </div>
-                     
-                         <div class="catalog-collection__item__photo">
-                             <div class="item__photo-coin-bg item__photo-coin-bg--catalog">
-                                 <div class="prew-img prew-img--catalog"><img class="item__photo-coin-catalog"
-                                 src="./img/photo/coins/ukraine/5-uah/rik-kota-revers.png" alt="Дивитись фото">
-                                 </div>
-                                 <div class="prew-img prew-img--catalog"><img class="item__photo-coin-catalog"
-                                 src="./img/photo/coins/ukraine/5-uah/rik-kota-avers.png" alt="Дивитись фото">
-                                 </div>
-                             </div>
-                         </div>
-                     
-                         <div class="catalog-collection__item__link">
-                             <a href="#!"><p>ДЕТАЛЬНІШЕ</p></a>
-                         </div>
-                        </div>
-                        <!-- Banktotes -->
-                         <div class="catalog-collection__item catalog-collection__item--item2">
-                         <div class="catalog-collection__item__title catalog-collection__item__title--banknote">
-                             <h3>БАНКНОТИ<br>—</h3>
-                         </div>
-                     
-                         <div class="catalog-collection__item__photo">
-
-                             <div class="item__photo-banknote-bg">
-                                 <div class="prew-img-banknote"><img class="item__photo-banknote"
-                                 src="./img/photo/banknotes/Ukraine/20uah-ne-probachymo-avers.jpeg" alt="Дивитись фото">
-                                 </div>
-                             
-                                 <div class="prew-img-banknote"><img class="item__photo-banknote"
-                                 src="./img/photo/banknotes/Ukraine/20uah-ne-zabudemo-revers.jpeg" alt="Дивитись фото">
-                                 </div>
-                             </div>
-                         </div>
-                     
-                         <div class="catalog-collection__item__link">
-                             <a href="#!"><p>ДЕТАЛЬНІШЕ</p></a>
-                         </div>
-                         </div>
-                     
-                   </div>
-                  <!-- Items Catalog Group 3-4 -->
-                   <div class="items-catalog-group__column3-4">
-                   <!-- Sets -->
-                    <div class="catalog-collection__item catalog-collection__item--item3">
-                    <div class="catalog-collection__item__title">
-                        <h3>НАБОРИ<br>—</h3>
-                    </div>
-
-                    <div class="catalog-collection__item__photo">
-                        <div class="item__photo-coin-bg item__photo-coin-bg--catalog">
-                            <div class="prew-img prew-img--catalog"><img class="item__photo-coin-catalog"
-                            src="./img/photo/sets/ukraine/kozacki-kleinody-avers.png" alt="Дивитись фото">
-                            </div>
-                            <div class="prew-img prew-img--catalog"><img class="item__photo-coin-catalog"
-                            src="./img/photo/sets/ukraine/kozacki-kleinody-revers.png" alt="Дивитись фото">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="catalog-collection__item__link">
-                        <a href="#!"><p>ДЕТАЛЬНІШЕ</p></a>
-                    </div>
-                    </div>
-                   <!-- Souvenirs -->
-                    <div class="catalog-collection__item catalog-collection__item--item4">
-                    <div class="catalog-collection__item__title">
-                        <h3>СУВЕНІРИ<br>—</h3>
-                    </div>
-
-                    <div class="catalog-collection__item__photo">
-                        <div class="item__photo-coin-bg item__photo-coin-bg--catalog">
-                            <div class="prew-img prew-img--catalog"><img class="item__photo-coin-catalog"
-                            src="./img/photo/souvenirs/poland/śląnsk-nasz-avers.png" alt="Дивитись фото">
-                            </div>
-                            <div class="prew-img prew-img--catalog"><img class="item__photo-coin-catalog"
-                            src="./img/photo/souvenirs/poland/śląnsk-nasz-revers.png" alt="Дивитись фото">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="catalog-collection__item__link">
-                        <a href="#!"><p>ДЕТАЛЬНІШЕ</p></a>
-                    </div>
-                    </div>
-                   </div>
-                </div>
-            </div>
-        </section>
-       <!-- RESENT ADDITIONS -->
-        <section class="section">
-           <div class="container">
-               <div class="catalog-title">
-                   <h2>НЕЩОДАВНІ ПОПОВНЕННЯ<br>—</h2>
-               </div>
-                <!-- Items Catalog Group 1Full 1-4-->
-               <div class="catalog-collection">
-                  <!-- Items Catalog Group 1-2 -->
-                  <div class="items-catalog-group__column1-2">
-                   <!-- Рік Кота (Кролика) -->
-                   <div class="catalog-collection__item catalog-collection__item--item1">
-                    <div class="catalog-collection__item__title">
-                        <h3>Рік Кота (Кролика)<br>—</h3>
-                    </div>
-
-                    <div class="catalog-collection__item__photo">
-                        <div class="item__photo-coin-bg item__photo-coin-bg--catalog">
-                            <div class="prew-img prew-img--catalog"><img class="item__photo-coin-catalog"
-                            src="./img/photo/coins/ukraine/5-uah/rik-kota-revers.png" alt="Дивитись фото">
-                            </div>
-                            <div class="prew-img prew-img--catalog"><img class="item__photo-coin-catalog"
-                            src="./img/photo/coins/ukraine/5-uah/rik-kota-avers.png" alt="Дивитись фото">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="catalog-collection__item__link">
-                        <a href="#!"><p>ДЕТАЛЬНІШЕ</p></a>
-                    </div>
-                   </div>
-                   <!-- Не Забудемо, Не Пробачимо -->
-                   <div class="catalog-collection__item catalog-collection__item--item2">
-                    <div class="catalog-collection__item__title">
-                        <h3>Не Забудемо, Не Пробачимо<br>—</h3>
-                    </div>
-
-                    <div class="catalog-collection__item__photo">
-
-                        <div class="item__photo-banknote-bg">
-                            <div class="prew-img-banknote"><img class="item__photo-banknote"
-                            src="./img/photo/banknotes/Ukraine/20uah-ne-probachymo-avers.jpeg" alt="Дивитись фото">
-                            </div>
-
-                            <div class="prew-img-banknote"><img class="item__photo-banknote"
-                            src="./img/photo/banknotes/Ukraine/20uah-ne-zabudemo-revers.jpeg" alt="Дивитись фото">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="catalog-collection__item__link">
-                        <a href="#!"><p>ДЕТАЛЬНІШЕ</p></a>
-                    </div>
-                   </div>
-                   </div>
+                  </div>
                    <div class="items-catalog-group__column3-4">
                    <!-- UNA PESETA 1869 -->
                    <div class="catalog-collection__item catalog-collection__item--item3">
