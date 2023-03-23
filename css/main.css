@@ -58,7 +58,8 @@ footer a {
     background-color: var(--main-bg-color);
 }
 
-.container {
+.container,
+.container--resent-additions {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -188,6 +189,20 @@ footer a {
     height: 1px;
     width: 100%;
     background-color: var(--dark-text-color);
+}
+
+/* Mobile menu */
+.header-nav__menu__mobile {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    column-gap: 12px;
+
+    font-size: 15px;
+    line-height: 1.19;
+    letter-spacing: 0.05em;
+
+    color: var(--light-text-color);
 }
 
 /* Header slider */
@@ -729,4 +744,3 @@ footer a {
     letter-spacing: 0.03em;
     color: var(--light-text-color);
 }
-
