@@ -90,7 +90,7 @@
         font-size: 30px;
     }
 
-    .select-filter {
+    .select-filter, .select-menu-filter {
         width: 220px;
         max-height: 35px;
         padding: 8px 16px;
@@ -186,7 +186,7 @@
         font-size: 11px;
     }
 
-    .select-filter {
+    .select-filter, .select-menu-filter {
         width: 100px;
         max-height: 35px;
         padding: 8px 16px;
@@ -234,7 +234,7 @@
         display: flex;
     }
 
-    .select-filter {
+    .select-filter, .select-menu-filter {
         position: absolute;
         flex-direction: row-reverse;
         top: 5px;
