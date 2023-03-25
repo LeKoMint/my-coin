@@ -17,6 +17,10 @@ owl.owlCarousel(
 
             801: {
                 items: 3,
+                },
+
+            1451: {
+                items: 4,
                 }
     },
     
@@ -59,6 +63,7 @@ closeFilterContainer.addEventListener('click', function() {
     sectionFilter.classList.toggle('none');
 })
 
+
 console.log(openFilterContainer);
 // Open-close SELECTS FILTER
 selectsFilter.forEach(element => {
@@ -76,3 +81,10 @@ selectFilterHeader.forEach(element => {
 
     })
 });
+
+
+
+
+
+
+        
