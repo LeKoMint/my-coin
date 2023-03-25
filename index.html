@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/media.css">
+    <link rel="stylesheet" href="./css/selects.css">
     <!-- Carusel css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Carusel theme css -->
@@ -163,28 +164,183 @@
         </div>
     </header>
 
-    <!-- CATALOG -->
-    <section class="wrapper">
-        <section class="section">
-            <div class="container">
-               <!-- Menu filter -->
-                <div class="select-filter select-filter--menu-filter">
-                <div class="menu-filter__title">
-                    <p class="menu-filter__title__big">ФІЛЬТРУВАТИ КАТАЛОГ</p>
-                    <p class="menu-filter__title__small">Фільтр</p>
-                </div>
-                <div class="menu-filter__icon">
-                    <img src="./img/icons/slider_filter_icon.svg" alt="Відкрити фільтр">
-                </div>
-                </div>
 
-                <div class="catalog-title catalog-title--main">
-                   <h2>КАТАЛОГ<br>—</h2>
+    <section class="wrapper">
+       <!-- FILTER -->
+        <section class="section none"  id="section_filter">
+            <div class="container">
+               <!-- Filter-header -->
+                <div class="filter-header">
+                    <div class="filter-header__title">ОБЕРІТЬ ПАРАМЕРИ ЯКІ ВАС ЦІКАВЛЯТЬ<br>—</div>
+                    <button class="filter-header__close">
+                        <img src="./img/icons/close-button-menu-filter.svg" alt="Close filter">
+                    </button>
                 </div>
-                <!-- Items Catalog Group 1Full 1-4-->
-                <div class="catalog-collection">
-                  <!-- Items Catalog Group 1-2 -->
-                   <div class="items-catalog-group__column1-2">
+                <div class="container-filter-items">
+                  <!-- FILTER-SELECTS -->
+                  <!-- Category -->
+                    <div class="filter-item">
+                    <div class="filter-item__title">КАТЕГОРІЯ</div>
+                   <!-- selects-closed -->
+                    <div class="select-filter">
+                        <div class="menu-filter__title">
+                            <p class="menu-filter__title__big">оберіть категорію</p>
+                        </div>
+                        <div class="menu-filter__icon">
+                            <img src="./img/icons/select_icon.svg" alt="Відкрити фільтр">
+                        </div>
+                    </div>
+                   <!-- selects-opened -->
+                    <div class="select-filter-active none">
+                        <!-- select_header -->
+                        <div class="select-filter__header">
+                            <div class="menu-filter__title">
+                                <p class="menu-filter__title__big">оберіть категорію</p>
+                            </div>
+                            <div class="menu-filter__icon menu-filter__icon--active">
+                                <img src="./img/icons/select_icon.svg" alt="Відкрити фільтр">
+                            </div>
+                        </div>
+                        <!-- select_check-boxes -->
+                        <div class="select-filter__list">
+                            <label for="category_all">
+                                <input type="checkbox" checked name="category" class="real-checkbox"
+                                       value="select_all" id="category_all">
+                                <span class="custom-checkbox"></span>
+                                обрати всі
+                            </label>
+
+                            <label for="coins">
+                                <input type="checkbox" name="category" class="real-checkbox"
+                                       value="coins" id="coins">
+                                <span class="custom-checkbox"></span>
+                                монети
+                            </label>
+
+                            <label for="banknotes">
+                                <input type="checkbox" name="category" class="real-checkbox"
+                                       value="banknotes" id="banknotes">
+                                <span class="custom-checkbox"></span>
+                                банкноти
+                            </label>
+
+                            <label for="sets">
+                                <input type="checkbox" name="category" class="real-checkbox"
+                                       value="sets" id="sets">
+                                <span class="custom-checkbox"></span>
+                                набори
+                            </label>
+
+                            <label for="souvenirs">
+                                <input type="checkbox" name="category" class="real-checkbox"
+                                       value="souvenirs" id="souvenirs">
+                                <span class="custom-checkbox"></span>
+                                сувеніри
+                            </label>
+
+                            <label for="rolls">
+                                <input type="checkbox" name="category" class="real-checkbox"
+                                       value="rolls" id="rolls">
+                                <span class="custom-checkbox"></span>
+                                банківські роли
+                            </label>
+                        </div>
+                    </div>
+                    </div>
+
+                  <!-- Country -->
+                    <div class="filter-item">
+                <div class="filter-item__title">КРАЇНА</div>
+               <!-- selects-closed -->
+                <div class="select-filter">
+                    <div class="menu-filter__title">
+                        <p class="menu-filter__title__big">оберіть країну</p>
+                    </div>
+                    <div class="menu-filter__icon">
+                        <img src="./img/icons/select_icon.svg" alt="Відкрити фільтр">
+                    </div>
+                </div>
+               <!-- selects-opened -->
+                <div class="select-filter-active none">
+                    <!-- select_header -->
+                    <div class="select-filter__header">
+                        <div class="menu-filter__title">
+                            <p class="menu-filter__title__big">оберіть країну</p>
+                        </div>
+                        <div class="menu-filter__icon menu-filter__icon--active">
+                            <img src="./img/icons/select_icon.svg" alt="Відкрити фільтр">
+                        </div>
+                    </div>
+                    <!-- select_check-boxes -->
+                    <div class="select-filter__list">
+                        <label for="country_all">
+                            <input type="checkbox" checked name="country" class="real-checkbox"
+                                   value="select_all" id="country_all">
+                            <span class="custom-checkbox"></span>
+                            обрати всі
+                        </label>
+
+                        <label for="ukraine">
+                            <input type="checkbox" name="ukraine" class="real-checkbox"
+                                   value="ukraine" id="ukraine">
+                            <span class="custom-checkbox"></span>
+                            Україна
+                        </label>
+
+                        <label for="poland">
+                            <input type="checkbox" name="poland" class="real-checkbox"
+                                   value="poland" id="poland">
+                            <span class="custom-checkbox"></span>
+                            Польща
+                        </label>
+
+                        <label for="shri-lanka">
+                            <input type="checkbox" name="shri-lanka" class="real-checkbox"
+                                   value="shri-lanka" id="shri-lanka">
+                            <span class="custom-checkbox"></span>
+                            Шрі-Ланка
+                        </label>
+
+                        <label for="tanzania">
+                            <input type="checkbox" name="tanzania" class="real-checkbox"
+                                   value="tanzania" id="tanzania">
+                            <span class="custom-checkbox"></span>
+                            Танзанія
+                        </label>
+
+                        <label for="european-union">
+                            <input type="checkbox" name="european-union" class="real-checkbox"
+                                   value="european-union" id="european-union">
+                            <span class="custom-checkbox"></span>
+                            Євросоюз
+                        </label>
+                    </div>
+                </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+       <!-- CATALOG -->
+        <section class="section">
+                <div class="container">
+                   <!-- Menu filter -->
+                    <div class="select-menu-filter" id="open_filter_container">
+                        <div class="menu-filter__title">
+                            <p class="menu-filter__title__big">ФІЛЬТРУВАТИ КАТАЛОГ</p>
+                            <p class="menu-filter__title__small">Фільтр</p>
+                        </div>
+                        <div class="menu-filter__icon">
+                            <img src="./img/icons/slider_filter_icon.svg" alt="Відкрити фільтр">
+                        </div>
+                    </div>
+
+                    <div class="catalog-title catalog-title--main">
+                       <h2>КАТАЛОГ<br>—</h2>
+                    </div>
+                    <!-- Items Catalog Group 1Full 1-4-->
+                    <div class="catalog-collection">
+                      <!-- Items Catalog Group 1-2 -->
+                       <div class="items-catalog-group__column1-2">
                         <!-- Coins -->
                         <div class="catalog-collection__item catalog-collection__item--item1">
                          <div class="catalog-collection__item__title">
@@ -230,9 +386,9 @@
                          </div>
                          </div>
                      
-                   </div>
-                  <!-- Items Catalog Group 3-4 -->
-                   <div class="items-catalog-group__column3-4">
+                       </div>
+                      <!-- Items Catalog Group 3-4 -->
+                       <div class="items-catalog-group__column3-4">
                    <!-- Sets -->
                     <div class="catalog-collection__item catalog-collection__item--item3">
                     <div class="catalog-collection__item__title">
@@ -275,12 +431,12 @@
                         <a href="#!"><p>ДЕТАЛЬНІШЕ</p></a>
                     </div>
                     </div>
-                   </div>
+                       </div>
+                    </div>
                 </div>
-            </div>
-        </section>
-       <!-- RESENT ADDITIONS -->
-        <section class="section">
+            </section>
+           <!-- RESENT ADDITIONS -->
+            <section class="section">
            <div class="container container--resent-additions">
                <div class="catalog-title">
                    <h2>НЕЩОДАВНІ ПОПОВНЕННЯ<br>—</h2>
@@ -380,9 +536,9 @@
                 </div>
                </div>
            </div>
-        </section>
-       <!-- SUBSCRIBE -->
-        <section class="section">
+            </section>
+           <!-- SUBSCRIBE -->
+            <section class="section">
             <div class="container container--subscribe">
                 <div class="catalog-title catalog-title--subscribe">
                    <h2>БУДЬ ТИМ ХТО КУПУЄ ГРОШІ ЗА ГРОШІ<br>—</h2>
@@ -408,9 +564,9 @@
                 <button class="form-subscribe__btn">Підписатись</button>
             </div>
 
-        </section>
-       <!-- OUR MISSION -->
-        <section class="section">
+            </section>
+           <!-- OUR MISSION -->
+            <section class="section">
             <div class="container container--our-mission">
                 <div class="catalog-title catalog-title--our-mission">
                     <h2>НАША МІСІЯ<br>—</h2>
@@ -432,8 +588,8 @@
                     </p>
                 </div>
             </div>
+            </section>
         </section>
-    </section>
     <!-- FOOTER -->
     <footer class="footer">
         <div class="footer__container">
