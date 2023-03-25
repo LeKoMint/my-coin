@@ -11,7 +11,7 @@ owl.owlCarousel(
                 items: 1,
                 },
 
-            501: {
+            551: {
                 items: 2,
                 },
 
@@ -37,3 +37,42 @@ $('.slider-dot').click(function() {
     owl.trigger('owl-dot');
 })
 
+// Filter
+
+const selectsFilter = document.querySelectorAll('.select-filter');
+const selectsFilterActiv = document.querySelectorAll('.select-filter-active');
+const selectFilterHeader = document.querySelectorAll('.select-filter__header');
+const closeFilterContainer = document.querySelector('.filter-header__close');
+const openFilterContainer = document.querySelector('#open_filter_container');
+const sectionFilter = document.querySelector('#section_filter');
+
+
+// Open-close FILTER
+openFilterContainer.addEventListener('click', function() {
+    openFilterContainer.classList.toggle('none');
+    sectionFilter.classList.toggle('none');
+
+})
+
+closeFilterContainer.addEventListener('click', function() {
+    openFilterContainer.classList.toggle('none');
+    sectionFilter.classList.toggle('none');
+})
+
+console.log(openFilterContainer);
+// Open-close SELECTS FILTER
+selectsFilter.forEach(element => {
+    element.addEventListener('click', function() {
+        element.classList.toggle('none');
+        element.nextElementSibling.classList.toggle('none');
+
+        });
+    });
+
+selectFilterHeader.forEach(element => {
+    element.addEventListener('click', function() {
+        element.parentElement.previousElementSibling.classList.toggle('none');
+        element.parentElement.classList.toggle('none');
+
+    })
+});
