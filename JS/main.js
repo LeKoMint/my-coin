@@ -2,7 +2,7 @@
 const owl = $('.owl-carousel');
 owl.owlCarousel(
    {
-        loop: true,
+        loop: false,
         margin: 15,
         nav: false,
         dots: true,
