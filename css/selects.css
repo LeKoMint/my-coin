@@ -1,4 +1,25 @@
 
+
+.select-filter__list::-webkit-scrollbar {
+    width: 8px;
+}
+
+.select-filter__list::-webkit-scrollbar-track {
+    width: 16px;
+    margin-top: 12px;
+    background: var(--main-bg-color);
+}
+
+.select-filter__list::-webkit-scrollbar-thumb {
+    background: var(--border-color);
+    border-radius: 8px;
+    border: 2px solid var(--main-bg-color);
+}
+
+.select-filter__list::-webkit-scrollbar-thumb:hover {
+    background: var(--dark-text-color);
+}
+
 .select-filter {
     display: flex;
     justify-content: space-between;
@@ -58,6 +79,9 @@
     width: 100%;
     /* padding: 10px 10px 25px 0; */
     border-top: solid 1px var(--border-color);
+
+    overflow-y: auto;
+
 }
 
 .real-checkbox {
