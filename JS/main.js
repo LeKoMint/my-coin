@@ -33,23 +33,15 @@ $('.header-slider__carusel__next').click(function() {
 $('.header-slider__carusel__prew').click(function() {
     owl.trigger('prev.owl.carousel');
 })
-// dots
-$('.slider-dot dot--active').click(function() {
-    owl.trigger('owl-dot active');
-})
-$('.slider-dot').click(function() {
-    owl.trigger('owl-dot');
-})
 
 // Filter
 
 const selectsFilter = document.querySelectorAll('.select-filter');
-const selectsFilterActiv = document.querySelectorAll('.select-filter-active');
 const selectFilterHeader = document.querySelectorAll('.select-filter__header');
 const closeFilterContainer = document.querySelector('.filter-header__close');
 const openFilterContainer = document.querySelector('#open_filter_container');
 const sectionFilter = document.querySelector('#section_filter');
-
+// const selectsFilterActiv = document.querySelectorAll('.select-filter-active');
 
 // Open-close FILTER
 openFilterContainer.addEventListener('click', function() {
@@ -63,8 +55,6 @@ closeFilterContainer.addEventListener('click', function() {
     sectionFilter.classList.toggle('none');
 })
 
-
-console.log(openFilterContainer);
 // Open-close SELECTS FILTER
 selectsFilter.forEach(element => {
     element.addEventListener('click', function() {
@@ -82,9 +72,3 @@ selectFilterHeader.forEach(element => {
     })
 });
 
-
-
-
-
-
-        
