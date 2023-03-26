@@ -58,11 +58,19 @@ closeFilterContainer.addEventListener('click', function() {
 // Open-close SELECTS FILTER
 selectsFilter.forEach(element => {
     element.addEventListener('click', function() {
+
+        selectsFilter.forEach(el => {
+            if(el.classList.contains('none')){
+                el.classList.remove('none');
+                el.nextElementSibling.classList.add('none');
+            };
+        });
+
         element.classList.toggle('none');
         element.nextElementSibling.classList.toggle('none');
-
         });
-    });
+
+});
 
 selectFilterHeader.forEach(element => {
     element.addEventListener('click', function() {
